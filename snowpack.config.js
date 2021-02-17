@@ -4,6 +4,7 @@ module.exports = {
     /* ... */
   },
   plugins: [
+    '@snowpack/plugin-postcss',
     /* ... */
   ],
   routes: [
@@ -23,4 +24,4 @@ module.exports = {
   buildOptions: {
     /* ... */
   },
-};
+}

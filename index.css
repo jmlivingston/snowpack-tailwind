@@ -1,4 +1,11 @@
-/* Add CSS styles here! */
-body {
-  font-family: sans-serif;
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
 }

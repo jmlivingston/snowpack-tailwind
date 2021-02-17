@@ -2,6 +2,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
+    "build-serve": "npx http-server build -o",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {

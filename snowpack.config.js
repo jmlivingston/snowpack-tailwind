@@ -2,6 +2,9 @@
 module.exports = {
   mount: {
     /* ... */
+    src: { url: '/src' },
+    // Mount "public" to the root URL path ("/*") and serve files with zero transformations
+    public: { url: '/', static: true, resolve: true },
   },
   plugins: [
     '@snowpack/plugin-postcss',
@@ -9,15 +12,11 @@ module.exports = {
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    { match: 'routes', src: '.*', dest: './public/index.html' },
   ],
   optimize: {
     /* Example: Bundle your final build: */
-    // "bundle": true,
     // bundle: true,
-    // minify: true,
-    // target: 'es2018',
-    // treeshake: true,
   },
   packageOptions: {
     /* ... */
